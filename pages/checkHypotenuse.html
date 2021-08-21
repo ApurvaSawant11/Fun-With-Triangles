@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Hypotenuse</title>
+    <link rel="stylesheet" href="../styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+</head>
+<body>
+    <nav>
+        <div class="heading">Fun With Triangles</div>
+        <ul>
+            <li><a href="../index.html">Angles of Triangle?</a></li>
+            <li><a href="checkHypotenuse.html">Check Hypotenuse</a></li>
+            <li><a href="calArea.html">Calculate Area</a></li>
+            <li><a href="triangleQuiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+
+    <h1>Enter the lengths of sides of right angled triangle</h1>
+
+    <form class="form" id="inputForm">
+        <label for="a">Side A</label>
+        <input class="input" type="number" id="a" required/>
+        <label for="b">Side B</label>
+        <input class="input" type="number" id="b" required/>
+
+        <button type="submit">Calculate</button>
+        <button type="reset">Find another</button>
+
+        <div class="output">
+            Hypotenuse will be calculated here
+        </div>
+
+    </form>
+
+    <footer>
+        <ul>
+            <li class="footerLink">
+              <a href="https://github.com/ApurvaSawant11" target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
+            </li>
+  
+            <li class="footerLink">
+              <a href="https://twitter.com/ApurvaSawant11" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+            </li>
+  
+            <li class="footerLink">
+              <a href="https://www.linkedin.com/in/apurvasawant11" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+            </li>
+  
+            <li class="footerLink">
+              <a href="https://apurvasawant11.netlify.app/" target="_blank"><i class="fas fa-briefcase fa-2x"></i></a>
+            </li>
+          </ul>
+        <p>Made with ❤️ by Apurva Sawant</p>
+    </footer>
+
+    <script>
+        const inputForm = document.querySelector("#inputForm");
+        const sideA = document.querySelector("#a");
+        const sideB = document.querySelector("#b");
+        const outputDiv = document.querySelector(".output");
+
+        inputForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            let lengthA = Number(sideA.value);
+            let lengthB = Number(sideB.value);
+
+            let hypo=0;
+            hypo = Math.sqrt((lengthA*lengthA)+(lengthB*lengthB));
+
+            outputDiv.innerHTML = hypo;
+        })
+
+    </script>
+</body>
+</html>

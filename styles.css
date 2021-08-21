@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+:root{
+    --primary-color: #2c3e50;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-image: url("./images/bg1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-color:rgba(0, 0, 0, 0.1);
+}
+
+.heading{
+    font-size: xx-large;
+}
+
+nav{
+    background-color: var(--primary-color);
+    color:white;
+}
+
+ul{
+    padding: 1rem;
+    list-style: none;
+}
+
+
+li{
+    display: inline;
+    font-weight: 600;
+    font-size: large;
+    padding: 1em; 
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    padding: 2rem;
+}
+
+h2{
+    padding: 0 0 1rem;
+}
+
+
+label{
+    font-size:1.1rem;
+    font-weight:600;
+}
+
+p{
+    font-size:1.1rem;
+    font-weight:600;
+    padding: 1em;
+}
+
+.que{
+    width: 60%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.que label{
+    padding: 1rem;
+    font-weight: normal;
+}
+
+.input{
+    padding: 1rem 1.5rem;
+    width: 100%;
+    margin: 1rem 0;
+    border: unset;
+    box-shadow: 0 0 5px #9CA3AF;
+}
+
+.form{
+    margin: 2rem auto;
+    max-width: 450px;
+    padding:2em;
+   
+}
+
+.areaForm{
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px #9CA3AF;
+    border-radius:40px;
+}
+
+button{
+    padding: 0.7rem 1.5rem;
+    margin: 1rem;
+    box-shadow: 0 0 5px #9CA3AF;
+    background: black;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+}
+
+button:hover {
+    transform: scale(1.1);
+  }
+
+.areaGrid{
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 5rem;
+    width: 80%;
+}
+
+.output{
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#score{
+    font-size: 1.1em;
+}
+
+
+footer{
+    background-color: var(--primary-color);
+    color:white;
+    
+}
